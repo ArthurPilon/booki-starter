@@ -74,13 +74,13 @@ header {
 }
 
 .searchbar {
-    border: 1px solid rgb(212, 207, 207);
+    border: 1px solid #F2F2F2;
     display: flex;
     width: min-content;
     align-items: stretch;
     border-radius: 10px;
     overflow: hidden;
-    height: 40px;
+    height: 45px;
 }
 
 .searchbar button {
@@ -95,11 +95,52 @@ header {
     font-weight: bold;
 }
 
+.button-magnifying-glass{
+    display: none;
+}
+
 #localisation{
-background-color: rgb(212, 207, 207);
+background-color: #F2F2F2;
 display: flex;
 align-items: center;
 padding: 0 20px;
+}
+
+.filtres{
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.filtres h2{
+    margin-right: 20px;
+    font-size:125%;
+    
+}
+
+.filtres button{
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+    font: inherit;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 12px 23px;
+    cursor: pointer;
+    margin: 0px 8px;
+    font-size: 110%;
+
+    
+}
+
+.filtres i{
+    margin-right: 5px;
+}
+
+#logoinfo{
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 7px;
+    justify-content: center;
 }
 
 nav{
