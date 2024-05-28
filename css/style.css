@@ -335,7 +335,6 @@ nav a:hover {
 
 .activites .activites-cards {
   display: flex;
-  height: 800px;
   justify-content: space-between;
 }
 
@@ -360,9 +359,6 @@ nav a:hover {
   margin-left: 20px;
 }
 
-#aimagefort {
-}
-
 #imgfort {
   width: 100%;
   object-fit: cover;
@@ -374,14 +370,53 @@ nav a:hover {
   max-width: 24%;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 280px;
+  background-color: #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer .assistance {
+  padding-right: 80px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   body {
-    background-color: red;
   }
+
+  .filtres {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtres h3 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+  }
+
+  .filtres .boutonfiltre {
+    align-self: flex-start;
+  }
+
+  .filtres .boutonfiltre button {
+    margin-top: 15px;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -399,6 +434,17 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: -15px;
+  }
+
+  .activites-cards {
+    max-height: 350px;
+  }
+
+  .activites-cards > a {
+    width: 23%;
   }
 
   .populaires-cards a {
@@ -414,7 +460,41 @@ nav a:hover {
   }
 
   .hebergement-cards > * {
-    width: 45%;
+    width: 30%;
+  }
+
+  .activites .card-content {
+    height: 82px;
+    align-items: center;
+  }
+
+  .activites-cards .card .card-content {
+    margin-left: 8%;
+  }
+  .activites .activites-cards img {
+    max-height: 220px;
+  }
+  .activites .activites-cards #imgfort {
+    min-width: 24%;
+    object-fit: cover;
+  }
+
+  footer {
+    gap: 70px;
+  }
+  footer > * {
+    width: 30%;
+  }
+
+  footer ul {
+    margin: 0px;
+  }
+
+  footer .apropos {
+    padding-right: 0px;
+  }
+  footer .assistance {
+    padding: 0px;
   }
 }
 
