@@ -26,8 +26,7 @@ body {
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
-  margin: auto
-  ;
+  margin: auto;
 }
 
 a {
@@ -38,7 +37,7 @@ a {
 .section-title {
   margin: 0;
   font-size: 22px;
-  margin-left: 1Opx;
+  margin-left: 10px;
 }
 
 .card {
@@ -109,8 +108,9 @@ nav a:hover {
   border: 1px solid #f2f2f2;
 }
 
-.bouttonrecherche button{
-height: 45px;}
+.bouttonrecherche button {
+  height: 45px;
+}
 
 .searchbar {
   display: flex;
@@ -167,14 +167,11 @@ height: 45px;}
   font-size: 110%;
 }
 
-
 .filtres button:hover {
-    background-color: #deebff;
-    /* Changement de curseur potentiel. Incompréhension de la consigne
-
+  background-color: #deebff;
+  /*
   cursor: url("images/logo/cursor.png"), auto;
-
-  */
+*/
 }
 
 .filtres i {
@@ -349,9 +346,7 @@ height: 45px;}
 
 .activites .activites-cards .card {
   display: flex;
-
   align-items: center;
-  justify-items: space-between;
   flex-direction: column;
   overflow: hidden;
   box-sizing: border-box;
@@ -409,9 +404,9 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .button-magnifying-glass {
-        display: none;
-      }
+  .button-magnifying-glass {
+    display: none;
+  }
   .filtres {
     display: flex;
     flex-direction: column;
@@ -610,7 +605,6 @@ footer li {
     justify-content: center;
   }
 
-
   .hebergements-and-populaires {
     flex-direction: column-reverse;
     display: flex;
@@ -657,9 +651,9 @@ footer li {
     max-height: fit-content;
     gap: 15px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-margin-bottom: 80px;
+    margin-bottom: 80px;
   }
-  .activites-cards > a{
+  .activites-cards > a {
     height: fit-content;
   }
 
@@ -669,7 +663,6 @@ margin-bottom: 80px;
 
   .activites-cards a {
     width: 80%;
-    jus
   }
 
   .activites .card-content {
@@ -684,7 +677,7 @@ margin-bottom: 80px;
     gap: 20px;
   }
 
-  footer > *{
+  footer > * {
     width: 90%;
   }
 }
